@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Jobs</title>
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1556745753-b2904692b3cd?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  margin: 0;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+   width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(13, 13, 14);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+
+</head>
+<body>
+    <h1>Retail Jobs</h1>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Sales Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Sales Assistant</h2>
+           <p class="company">Primark</p>
+
+           <div class="details">
+            <span>Salary: £12.50–£14.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time (37.5 hours per week)</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Assistant</h2>
+           <p class="company">Lidl Great Britain Limited</p>
+
+           <div class="details">
+            <span>Salary: £13.45–£14.45 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time | 35–40 hours per week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Advisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Advisor</h2>
+           <p class="company">H&M</p>
+
+           <div class="details">
+            <span>Salary: £12.50–£13.75 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time 35–40 hours per week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Assistant</h2>
+           <p class="company">Marks & Spencer</p>
+
+           <div class="details">
+            <span>Salary: £12.60–£14.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time (37.5 hours/week)</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Store Colleague.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Store Colleague</h2>
+           <p class="company">Aldi</p>
+
+           <div class="details">
+            <span>Salary: £13.65–£14.35/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 30–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Service Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Service Assistant</h2>
+           <p class="company">Tesco</p>
+
+           <div class="details">
+            <span>Salary: £12.45–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 36.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Assistant</h2>
+           <p class="company">River Island</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.75/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Store Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Store Assistant</h2>
+           <p class="company">Next</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.80/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Advisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Advisor</h2>
+           <p class="company">EE</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£31,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window .location.href='Shop Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Shop Assistant</h2>
+           <p class="company">Boots</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.80/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Cashier.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Cashier</h2>
+           <p class="company">Sainsbury's</p>
+
+           <div class="details">
+            <span>Salary: £12.45–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 36–39 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Team Member.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Team Member</h2>
+           <p class="company">Co-op</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Merchandiser.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Merchandiser</h2>
+           <p class="company">DCK Group</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Associate.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Associate</h2>
+           <p class="company">DCK Group</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Fashion Retail Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Fashion Retail Assistant</h2>
+           <p class="company">New Look</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Store Assistant 2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Store Assistant</h2>
+           <p class="company">Matalan</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Team Member.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Team Member</h2>
+           <p class="company">WHSmith</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Consultant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Consultant</h2>
+           <p class="company">Schuh</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.75/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Department Store Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Department Store Assistant</h2>
+           <p class="company">John Lewis & Partners</p>
+
+           <div class="details">
+            <span>Salary: £24,500–£30,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Assistant 2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Assistant</h2>
+           <p class="company">Morrisons</p>
+
+           <div class="details">
+            <span>Salary: £12.40–£13.60/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Supervisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Supervisor</h2>
+           <p class="company">Poundland</p>
+
+           <div class="details">
+            <span>Salary: £27,000–£32,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Assistant3.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Assistant</h2>
+           <p class="company">Yours Clothing</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Store Operative.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Store Operative</h2>
+           <p class="company">Dunelm</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Assistant</h2>
+           <p class="company">B&M</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Convenience Store Assistant.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Convenience Store Assistant</h2>
+           <p class="company">Iceland Foods</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Assistant3.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Assistant</h2>
+           <p class="company">Home Bargains</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.50/hou</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Assistant</h2>
+           <p class="company">Waitrose & Partners</p>
+
+           <div class="details">
+            <span>Salary: £12.75–£14.25/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Assistant4.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Assistant</h2>
+           <p class="company">Claire's</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Sales Advisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Sales Advisor</h2>
+           <p class="company">DFS</p>
+
+           <div class="details">
+            <span>Salary: £28,000–£40,000/year + commission</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Advisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Advisor</h2>
+           <p class="company">Argos</p>
+
+           <div class="details">
+            <span>Salary: £12.45–£13.75/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Assistant4.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Assistant</h2>
+           <p class="company">TK Maxx</p>
+
+           <div class="details">
+            <span>Salary: £12.35–£13.75/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Assistant</h2>
+           <p class="company">Superdrug</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.60/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Sales Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Sales Assistant</h2>
+           <p class="company">Sports Direct</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Service Advisor.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Service Advisor</h2>
+           <p class="company">Halfords</p>
+
+           <div class="details">
+            <span>Salary: £24,500–£28,500/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Store Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Store Assistant</h2>
+           <p class="company">Poundstretcher</p>
+
+           <div class="details">
+            <span>Salary: £12.20–£13.30/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Advisor2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Advisor</h2>
+           <p class="company">Pandora</p>
+
+           <div class="details">
+            <span>Salary: £12.50–£13.80/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Team Member2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Team Member</h2>
+           <p class="company">Mountain Warehouse</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.50/hou</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Assistant3.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Assistant</h2>
+           <p class="company">Asda</p>
+
+           <div class="details">
+            <span>Salary: £12.45–£13.60/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 36–38 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Sales Associate.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Sales Associate</h2>
+           <p class="company">The Body Shop</p>
+
+           <div class="details">
+            <span>Salary: £12.30–£13.75/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Consultant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Consultant</h2>
+           <p class="company">Oak Furnitureland</p>
+
+           <div class="details">
+            <span>Salary: £27,000–£36,000/year + commission.</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Assistant5.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Assistant</h2>
+           <p class="company">The Range</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Shop Assistant2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Shop Assistant</h2>
+           <p class="company">Greggs</p>
+
+           <div class="details">
+            <span>Salary: £12.60–£13.70/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–39 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Customer Assistant4.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Customer Assistant</h2>
+           <p class="company">Farmfoods</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Retail Sales Advisor2.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Retail Sales Advisor</h2>
+           <p class="company">O2</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£32,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 37.5 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Sales Assistant5.retail.html'">
+            <span class="badge">Promoted</span>
+            <h2>Sales Assistant</h2>
+           <p class="company">Footasylum</p>
+
+           <div class="details">
+            <span>Salary: £12.25–£13.40/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, 35–40 hrs/week</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+</body>
+</html>
+<a

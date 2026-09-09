@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare & Care Jobs</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1565317788240-4a3a04b9cd94?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  margin: 0;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(19, 18, 20);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+</head>
+<body>
+    <h1>Healthcare & Care Jobs</h1>
+
+    <!--JOB LISTS-->
+
+    <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='registered.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Registered Nurse (RGN)</h2>
+           <p class="company">NHS Hospital</p>
+
+           <div class="details">
+            <span>Salary: £29,970–£36,483 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+           </a>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='staff.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Staff Nurse</h2>
+           <p class="company">Private Hospital</p>
+
+           <div class="details">
+            <span>Salary: £30,000–£38,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+           
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Assistant.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Healthcare Assistant</h2>
+           <p class="company">Moulsham Home</p>
+
+           <div class="details">
+            <span>Salary: £11.80–£11.90/hr</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+           
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Oncology.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Oncology Staff Nurse</h2>
+           <p class="company">Private Hospital</p>
+
+           <div class="details">
+            <span>Salary: Competitive</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Part-time</span>
+           </div>
+
+            <button>View More</button>
+        
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Support.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Support & Care Worker</h2>
+           <p class="company">1 Stop Healthcare</p>
+
+           <div class="details">
+            <span>Salary: £12.21–£14.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Part-time</span>
+           </div>
+
+            <button>View More</button>
+
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Relief.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Relief Support Worker</h2>
+           <p class="company">Royal Mencap Society</p>
+
+           <div class="details">
+            <span>Salary: £12.60/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time / Flexible</span>
+           </div>
+
+            <button> View More</button>
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Children.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Children's Support Worker</h2>
+           <p class="company">City & County Healthcare</p>
+
+           <div class="details">
+            <span>Salary: £13–£15/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Learning.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Learning Disabilities Support Worker</h2>
+           <p class="company">ECL</p>
+
+           <div class="details">
+            <span>Salary: £12.53/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Part-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='ICUNurse.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>ICU Nurse</h2>
+           <p class="company">Acute Hospital</p>
+
+           <div class="details">
+            <span>Salary: £36,000–£48,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Complex.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Complex Support Worker</h2>
+           <p class="company">Harmony Healthcare</p>
+
+           <div class="details">
+            <span>Salary: £15–£18 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+     <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Clinical.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Clinical Nurse Specialist (CNS)</h2>
+           <p class="company">Specialist Clinic</p>
+
+           <div class="details">
+            <span>Salary: £45,000–£55,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Live-in.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Live-in Care Assistant</h2>
+           <p class="company">Ivy Palmer Homecare </p>
+
+           <div class="details">
+            <span>Salary: £700–£900 per week</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Patient.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Patient Support Worker</h2>
+           <p class="company">HCRG Care Group</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Part-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='BankCare.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Bank Care Assistant</h2>
+           <p class="company">Windle Court</p>
+
+           <div class="details">
+            <span>Salary: £12.72 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Bank / Flexible</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Domestic.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Domestic Assistant</h2>
+           <p class="company">Madelayne Court Care Home
+</p>
+
+           <div class="details">
+            <span>Salary: £12.71 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Rehabilitation.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Rehabilitation Assistant</h2>
+           <p class="company">HCRG Care Group</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Activities.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Activities Coordinator</h2>
+           <p class="company">Madelayne Court Care Home</p>
+
+           <div class="details">
+            <span>Salary: £12.75 per hourBank / Flexible</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Bank / Flexible</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Residential.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Residential Care Assistant</h2>
+           <p class="company">Manor Lodge Care Home</p>
+
+           <div class="details">
+            <span>Salary: £12.50–£14.50 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='HomeCare.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Home Care Assistant</h2>
+           <p class="company">Brisca Healthcare</p>
+
+           <div class="details">
+            <span>Salary: £12.50–£15.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Therapy.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Therapy Assistant</h2>
+           <p class="company">Springfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Maternity.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Maternity Support Worker</h2>
+           <p class="company">NHS Hospital</p>
+
+           <div class="details">
+            <span>Salary: £24,071–£25,674 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='HealthVisitor.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Health Visitor Assistant</h2>
+           <p class="company">NHS Community Services</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+    </section>
+
+    <section class="job-list">
+        <div class="job-card" onclick="window.location.href='Phlebotomist.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Phlebotomist</h2>
+           <p class="company">Springfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£28,000/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Outpatients.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Healthcare Assistant (Outpatients)</h2>
+           <p class="company">Phoenix Hospital Chelmsford</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Reablement.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Reablement Worker</h2>
+           <p class="company">ECL | Person-centred Care
+</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£31,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Occupational.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Occupational Therapy Assistant</h2>
+           <p class="company">Broomfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£31,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='ClinicalAdministrato.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Clinical Administrator</h2>
+           <p class="company">Broomfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Housekeeping.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Housekeeping Supervisor (Healthcare)</h2>
+           <p class="company">Manor Lodge Care Home – Care UK</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£30,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='CareTeam.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Care Team Leader</h2>
+           <p class="company">Admirals Reach Care Home</p>
+
+           <div class="details">
+            <span>Salary: £28,000–£35,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Activities and Wellbeing.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Activities and Wellbeing Lead</h2>
+           <p class="company">Cherry Wood Grange Care Home</p>
+
+           <div class="details">
+            <span>Salary: £13.00–£15.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Registered Mental Health Nurse.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Registered Mental Health Nurse (RMN)</h2>
+           <p class="company">Springfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £37,000–£47,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Dementia Care Assistant.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Dementia Care Assistant</h2>
+           <p class="company">Cherry Wood Grange Care Home</p>
+
+           <div class="details">
+            <span>Salary: £12.80–£14.50/hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Ward Clerk.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Ward Clerk</h2>
+           <p class="company">Broomfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£26,500/year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Endoscopy Assistant.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Endoscopy Assistant</h2>
+           <p class="company">Springfield Hospital</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£30,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Phlebotomist2.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Phlebotomist</h2>
+           <p class="company">Phoenix Hospital Chelmsford</p>
+
+           <div class="details">
+            <span>Salary: £24,500–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Unit Manager (Non-Clinical).healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Unit Manager (Non-Clinical)</h2>
+           <p class="company">Admirals Reach Care Home</p>
+
+           <div class="details">
+            <span>Salary: £17.00–£18.50 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Clinical Scheduler.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Clinical Scheduler</h2>
+           <p class="company">Superior Healthcare – Essex</p>
+
+           <div class="details">
+            <span>Salary: £26,000–£32,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Care Assessor.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Care Assessor</h2>
+           <p class="company">Infinite Healthcare Services Ltd</p>
+
+           <div class="details">
+            <span>Salary: £27,000–£33,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Residential Care Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Residential Care Worker</h2>
+           <p class="company">Lyons Court Residential Care Home</p>
+
+           <div class="details">
+            <span>Salary: £12.75–£14.50 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Healthcare Support Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Healthcare Support Worker</h2>
+           <p class="company">HCRG Care Group</p>
+
+           <div class="details">
+            <span>Salary: £25,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time (37.5 hours per week)</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Patient Transport Driver.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Patient Transport Driver</h2>
+           <p class="company">EMED Group</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£29,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time, Working Hours: Typically 37.5–40 hours per week, including shifts, evenings, weekends, and bank holidays as operationally required.</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Autism Support Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Autism Support Worker</h2>
+           <p class="company">Dimensions UK</p>
+
+           <div class="details">
+            <span>Salary: £12.75–£15.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Senior Home Care Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Senior Home Care Worker</h2>
+           <p class="company">Helping Hands Home Care</p>
+
+           <div class="details">
+            <span>Salary: £28,000–£34,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Hospice Support Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Hospice Support Worker</h2>
+           <p class="company">Farleigh Hospice</p>
+
+           <div class="details">
+            <span>Salary: £24,000–£30,000 per year</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+
+     <section class="job-list">
+
+        <div class="job-card" onclick="window.location.href='Brain Injury Support Worker.healthcare.html'">
+            <span class="badge">Promoted</span>
+            <h2>Brain Injury Support Worker</h2>
+           <p class="company">Active Care Group</p>
+
+           <div class="details">
+            <span>Salary: £13.00–£16.00 per hour</span><br>
+            <span>📍Location: Chelmsford</span><br>
+            <span>🕒Hour: Full-time</span>
+           </div>
+
+            <button>View More</button>
+        </div>
+     </section>
+    
+</body>
+</html>

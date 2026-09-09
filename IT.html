@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Jobs</title>
+    <style>
+ body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1599837565318-67429bde7162?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(7, 7, 7);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+</head>
+<body>
+    <h1>IT Jobs</h1>
+
+    <section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='digital.support.analyst.essex.county.council.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Digital Support Analyst</h2>
+
+        <p class="company">Essex County Council</p>
+
+        <div class="details">
+            <span>Salary: £30,685–£36,099/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='solutions.architect.essex.county.council.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Solutions Architect</h2>
+
+        <p class="company">Essex County Council</p>
+
+        <div class="details">
+            <span>Salary: £51,563–£60,662/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.systems.engineer.principal.it.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Systems Engineer</h2>
+
+        <p class="company">Principal IT</p>
+
+        <div class="details">
+            <span>Salary: Up to £35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 9am–6pm</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.field.service.engineer.rise.technical.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Field Service Engineer</h2>
+
+        <p class="company">Rise Technical Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £35,000–£40,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='software.developer.spectrum.it.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Software Developer</h2>
+
+        <p class="company">Spectrum IT Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £65,000–£70,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='developer.it.18.month.ftc.delta.housing.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Developer (IT) – 18 Month FTC</h2>
+
+        <p class="company">Delta Housing</p>
+
+        <div class="details">
+            <span>Salary: £55,055/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='trainee.coding.programmer.itol.recruit.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Trainee Coding & Programmer</h2>
+
+        <p class="company">ITOL Recruit</p>
+
+        <div class="details">
+            <span>Salary: £27,000–£40,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='web.developer.placement.programme.career.change.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Web Developer Placement Programme</h2>
+
+        <p class="company">Career Change</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='coding.trainee.placement.programme.itol.recruit.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Coding Trainee Placement Programme</h2>
+
+        <p class="company">ITOL Recruit</p>
+
+        <div class="details">
+            <span>Salary: £27,000–£40,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='trainee.software.developer.itol.recruit.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Trainee Software Developer</h2>
+
+        <p class="company">ITOL Recruit</p>
+
+        <div class="details">
+            <span>Salary: £26,000–£35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.project.manager.construction.infrastructure.business.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Project Manager</h2>
+
+        <p class="company">Construction & Infrastructure Business</p>
+
+        <div class="details">
+            <span>Salary: £50,000–£70,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.project.manager.robertson.sumner.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Project Manager</h2>
+
+        <p class="company">Robertson Sumner</p>
+
+        <div class="details">
+            <span>Salary: £55,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.sales.specialist.growing.technology.business.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Sales Specialist</h2>
+
+        <p class="company">Growing Technology Business</p>
+
+        <div class="details">
+            <span>Salary: £45,000–£50,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='information.technology.field.technician.brabner.fox.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Information Technology Field Technician</h2>
+
+        <p class="company">Brabner Fox</p>
+
+        <div class="details">
+            <span>Salary: £30,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.technology.recruitment.consultant.ruth.moran.consulting.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Technology Recruitment Consultant</h2>
+
+        <p class="company">Ruth Moran Consulting</p>
+
+        <div class="details">
+            <span>Salary: £40,000/year + commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Hybrid</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='av.commissioning.engineer.programmer.alecto.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>AV Commissioning Engineer – Programmer</h2>
+
+        <p class="company">Alecto Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £40,000–£45,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='digital.it.support.role.essex.county.council.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Digital/IT Support role</h2>
+
+        <p class="company">Essex County Council</p>
+
+        <div class="details">
+            <span>Salary: £30,685–£36,099/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.support.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Support</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £25,420–£39,765/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.it.support.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior IT Support</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £35,577/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.support.specialist.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Support Specialist</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £21,000–£31,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.desk.analyst.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Desk Analyst</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £21,483–£27,368/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.desk.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Desk Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £20,934–£27,831/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='cyber.security.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Cyber Security Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £32,074–£64,349/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='software.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Software Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £37,370–£63,565/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='junior.software.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Junior Software Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £23,597/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.software.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior Software Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £43,604/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='principal.software.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Principal Software Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £68,198/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='entry.level.software.engineer.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Entry-Level Software Engineer</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £38,679/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='software.engineer.intern.various.employers.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Software Engineer Intern</h2>
+
+        <p class="company">Various employers</p>
+
+        <div class="details">
+            <span>Salary: Around £26,368/year average</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='it.helpdesk.specialist.rutherford.briant.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>IT Helpdesk Specialist</h2>
+
+        <p class="company">Rutherford Briant</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£36,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Part-time/temporary</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driving & Logistics Jobs</title>
+    <style>
+            body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1608578065064-586f72a7cc8e?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(18, 18, 19);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+</head>
+<body>
+    <h1>Driving & Logistics Jobs</h1>
+    <section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='hgv.class.1.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>HGV Class 1 Driver</h2>
+
+        <p class="company">DHL Supply Chain</p>
+
+        <div class="details">
+            <span>Salary: £18.50–£22.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 45–50 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='hgv.class.2.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>HGV Class 2 Driver</h2>
+
+        <p class="company">GXO Logistics</p>
+
+        <div class="details">
+            <span>Salary: £16.50–£19.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='van.delivery.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Van Delivery Driver</h2>
+
+        <p class="company">Amazon Logistics</p>
+
+        <div class="details">
+            <span>Salary: £13.50–£15.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='multi.drop.delivery.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Multi-Drop Delivery Driver</h2>
+
+        <p class="company">Evri</p>
+
+        <div class="details">
+            <span>Salary: £13.00–£15.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 38–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='courier.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Courier Driver</h2>
+
+        <p class="company">DPD UK</p>
+
+        <div class="details">
+            <span>Salary: £13.50–£15.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='parcel.delivery.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Parcel Delivery Driver</h2>
+
+        <p class="company">Royal Mail</p>
+
+        <div class="details">
+            <span>Salary: £13.05–£14.75/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 35–40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='7.5.tonne.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>7.5 Tonne Driver</h2>
+
+        <p class="company">Driver Hire Chelmsford</p>
+
+        <div class="details">
+            <span>Salary: £15.00–£17.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='lgv.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>LGV Driver</h2>
+
+        <p class="company">Booker Wholesale</p>
+
+        <div class="details">
+            <span>Salary: £16.00–£18.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='home.delivery.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Home Delivery Driver</h2>
+
+        <p class="company">Tesco</p>
+
+        <div class="details">
+            <span>Salary: £12.80–£14.30/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 36–40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='delivery.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Delivery Driver</h2>
+
+        <p class="company">Ocado Logistics</p>
+
+        <div class="details">
+            <span>Salary: £13.75–£16.25/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='warehouse.operative.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Warehouse Operative</h2>
+
+        <p class="company">Amazon UK</p>
+
+        <div class="details">
+            <span>Salary: £13.00–£14.80/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5–40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='warehouse.assistant.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Warehouse Assistant</h2>
+
+        <p class="company">Wincanton</p>
+
+        <div class="details">
+            <span>Salary: £12.75–£14.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='warehouse.picker.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Warehouse Picker</h2>
+
+        <p class="company">Aldi Distribution Centre</p>
+
+        <div class="details">
+            <span>Salary: £13.50–£15.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='warehouse.packer.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Warehouse Packer</h2>
+
+        <p class="company">Lidl GB</p>
+
+        <div class="details">
+            <span>Salary: £13.65–£14.65/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 35–40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='order.picker.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Order Picker</h2>
+
+        <p class="company">Bidfood UK</p>
+
+        <div class="details">
+            <span>Salary: £13.20–£15.20/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='reach.truck.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Reach Truck Driver</h2>
+
+        <p class="company">Culina Group</p>
+
+        <div class="details">
+            <span>Salary: £14.50–£16.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='counterbalance.forklift.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Counterbalance Forklift Driver</h2>
+
+        <p class="company">Uniserve Group</p>
+
+        <div class="details">
+            <span>Salary: £14.00–£16.00/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='forklift.truck.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Forklift Truck Driver</h2>
+
+        <p class="company">Travis Perkins</p>
+
+        <div class="details">
+            <span>Salary: £13.80–£15.80/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='logistics.operative.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Logistics Operative</h2>
+
+        <p class="company">CEVA Logistics</p>
+
+        <div class="details">
+            <span>Salary: £13.25–£15.25/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='logistics.assistant.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Logistics Assistant</h2>
+
+        <p class="company">Kuehne + Nagel</p>
+
+        <div class="details">
+            <span>Salary: £12.80–£14.80/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='logistics.coordinator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Logistics Coordinator</h2>
+
+        <p class="company">DB Schenker</p>
+
+        <div class="details">
+            <span>Salary: £28,000–£34,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='transport.coordinator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Transport Coordinator</h2>
+
+        <p class="company">Wincanton</p>
+
+        <div class="details">
+            <span>Salary: £29,000–£35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='transport.planner.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Transport Planner</h2>
+
+        <p class="company">Gregory Distribution</p>
+
+        <div class="details">
+            <span>Salary: £32,000–£38,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='distribution.assistant.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Distribution Assistant</h2>
+
+        <p class="company">Tesco Distribution</p>
+
+        <div class="details">
+            <span>Salary: £12.90–£14.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='distribution.coordinator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Distribution Coordinator</h2>
+
+        <p class="company">DHL Supply Chain</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£36,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='dispatch.operative.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Dispatch Operative</h2>
+
+        <p class="company">Brakes</p>
+
+        <div class="details">
+            <span>Salary: £13.00–£14.75/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='dispatch.supervisor.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Dispatch Supervisor</h2>
+
+        <p class="company">GXO Logistics</p>
+
+        <div class="details">
+            <span>Salary: £34,000–£40,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='goods.in.operative.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Goods In Operative</h2>
+
+        <p class="company">Toolstation</p>
+
+        <div class="details">
+            <span>Salary: £12.70–£14.20/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='goods.out.operative.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Goods Out Operative</h2>
+
+        <p class="company">Screwfix</p>
+
+        <div class="details">
+            <span>Salary: £12.70–£14.20/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More></button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='stock.controller.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Stock Controller</h2>
+
+        <p class="company">B&M Distribution</p>
+
+        <div class="details">
+            <span>Salary: £28,000–£33,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='inventory.controller.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Inventory Controller</h2>
+
+        <p class="company">Culina Group</p>
+
+        <div class="details">
+            <span>Salary: £29,000–£34,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='supply.chain.assistant.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Supply Chain Assistant</h2>
+
+        <p class="company">Nestlé UK</p>
+
+        <div class="details">
+            <span>Salary: £27,000–£31,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='supply.chain.coordinator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Supply Chain Coordinator</h2>
+
+        <p class="company">Britvic</p>
+
+        <div class="details">
+            <span>Salary: £31,000–£37,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='fleet.administrator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Fleet Administrator</h2>
+
+        <p class="company">Enterprise Mobility</p>
+
+        <div class="details">
+            <span>Salary: £26,000–£30,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='fleet.coordinator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Fleet Coordinator</h2>
+
+        <p class="company">Royal Mail</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£36,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='transport.administrator.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Transport Administrator</h2>
+
+        <p class="company">DHL Supply Chain</p>
+
+        <div class="details">
+            <span>Salary: £26,500–£31,500/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 37.5 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='route.planner.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Route Planner</h2>
+
+        <p class="company">Evri</p>
+
+        <div class="details">
+            <span>Salary: £29,000–£35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='driver.mate.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Driver Mate</h2>
+
+        <p class="company">AO Logistics</p>
+
+        <div class="details">
+            <span>Salary: £12.50–£13.80/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='driver.assistant.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Driver Assistant</h2>
+
+        <p class="company">Currys</p>
+
+        <div class="details">
+            <span>Salary: £12.40–£13.90/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='removal.driver.logistics.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Removal Driver</h2>
+
+        <p class="company">Pickfords</p>
+
+        <div class="details">
+            <span>Salary: £13.50–£15.50/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 40–45 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Service Jobs</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1782069327238-c154984f06ac?q=80&w=1066&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+   width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(23, 23, 24);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+</head>
+<body>
+    <h1>Customer Service Jobs</h1>
+
+    <section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.advisor.customer.service.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Advisor</h2>
+
+        <p class="company">Adecco</p>
+
+        <div class="details">
+            <span>Salary: £12.80/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri 8am–4pm + alternate Saturdays</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.advisor.gardening.express.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Advisor</h2>
+
+        <p class="company">Gardening Express</p>
+
+        <div class="details">
+            <span>Salary: From £25,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: 40 hrs/week, Mon–Sat rota</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='sales.customer.service.advisor.group1.automotive.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Sales & Customer Service Advisor</h2>
+
+        <p class="company">Group 1 Automotive</p>
+
+        <div class="details">
+            <span>Salary: £26,436.80 + £6,515 OTE</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.administrator.prime.appointments.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Administrator</h2>
+
+        <p class="company">Prime Appointments</p>
+
+        <div class="details">
+            <span>Salary: £12.71/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 8 hrs/day between 8am–5pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.sales.advisor.international.property.media.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service & Sales Advisor</h2>
+
+        <p class="company">International Property Media</p>
+
+        <div class="details">
+            <span>Salary: £24,000 + commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.advisor.new.business.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Advisor – New Business</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £26,000 + monthly commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, office-based</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.executive.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Executive</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: Up to £27,000 + bonus</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, 2-week rota</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.coordinator.focus.resourcing.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Coordinator</h2>
+
+        <p class="company">Focus Resourcing</p>
+
+        <div class="details">
+            <span>Salary: £31,000–£33,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 8:30am–5:30pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.saxton.4x4.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Saxton 4x4</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£32,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri 8am–5pm + 1 in 3 Saturdays</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.theo.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">theo</p>
+
+        <div class="details">
+            <span>Salary: £41,500–£52,500 OTE</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 8am–6pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.perfect.placement.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Perfect Placement</p>
+
+        <div class="details">
+            <span>Salary: Up to £32,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri + Saturday rota</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.auto.skills.uk.1.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Auto Skills UK</p>
+
+        <div class="details">
+            <span>Salary: £30,000+/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri 8am–5pm + 1 in 3 Saturdays</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.link.personnel.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Link Personnel</p>
+
+        <div class="details">
+            <span>Salary: £30,000+/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.auto.skills.uk.2.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Auto Skills UK</p>
+
+        <div class="details">
+            <span>Salary: £28,600 + bonus</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, no weekends</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.auto.skills.uk.3.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor</h2>
+
+        <p class="company">Auto Skills UK</p>
+
+        <div class="details">
+            <span>Salary: Up to £35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.service.advisor.lookers.chelmsford.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior Service Advisor</h2>
+
+        <p class="company">Lookers Chelmsford</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.advisor.noble.recruiting.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Advisor</h2>
+
+        <p class="company">Noble Recruiting</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.administrator.adecco.1.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Administrator</h2>
+
+        <p class="company">Adecco</p>
+
+        <div class="details">
+            <span>Salary: £27,000–£28,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, rota</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.administrator.adecco.2.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Administrator</h2>
+
+        <p class="company">Adecco</p>
+
+        <div class="details">
+            <span>Salary: £25,000–£29,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.administrator.office.angels.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Administrator</h2>
+
+        <p class="company">Office Angels</p>
+
+        <div class="details">
+            <span>Salary: £24,500/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.administrator.reed.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Administrator</h2>
+
+        <p class="company">Reed</p>
+
+        <div class="details">
+            <span>Salary: £13/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.representative.adecco.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Representative</h2>
+
+        <p class="company">Adecco</p>
+
+        <div class="details">
+            <span>Salary: Negotiable</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.member.representative.saffron.building.society.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Representative / Member Representative</h2>
+
+        <p class="company">Saffron Building Society</p>
+
+        <div class="details">
+            <span>Salary: £24,500/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.consultant.tsb.bank.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Consultant</h2>
+
+        <p class="company">TSB Bank</p>
+
+        <div class="details">
+            <span>Salary: £26,160/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: 35 hrs/week, shifts 8am–8pm Mon–Sat</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.assistant.operations.marks.and.spencer.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Assistant – Operations</h2>
+
+        <p class="company">Marks & Spencer</p>
+
+        <div class="details">
+            <span>Salary: £13.41/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time, varied shifts</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.assistant.east.of.england.coop.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Assistant</h2>
+
+        <p class="company">East of England Co-op</p>
+
+        <div class="details">
+            <span>Salary: £12.73/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: 24 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.service.assistant.east.of.england.coop.2.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Service Assistant</h2>
+
+        <p class="company">East of England Co-op</p>
+
+        <div class="details">
+            <span>Salary: £13.23/hour</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: 4–12 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='contact.centre.agent.pinnacle.group.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Contact Centre Agent</h2>
+
+        <p class="company">Pinnacle Group</p>
+
+        <div class="details">
+            <span>Salary: £23,192/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='service.advisor.apprentice.group1.automotive.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Service Advisor Apprentice</h2>
+
+        <p class="company">Group 1 Automotive</p>
+
+        <div class="details">
+            <span>Salary: £16,640 first year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri 8:30am–5:30pm, 40 hrs/week</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='client.service.sales.advisor.international.property.media.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Client Service & Sales Advisor</h2>
+
+        <p class="company">International Property Media</p>
+
+        <div class="details">
+            <span>Salary: £24,000 + uncapped commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='customer.advisor.logistics.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Customer Advisor – Logistics</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='administration.assistant.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Administration Assistant</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £25,500/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 9am–5pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='salesperson.logistics.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Salesperson – Logistics</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £32,000–£34,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 8:30am–5pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='business.development.executive.adore.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Business Development Executive</h2>
+
+        <p class="company">Adore Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £26,000 + commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Office-based, 8am–5pm</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='internal.sales.warehouse.assistant.new.d.zambelis.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Internal Sales & Warehouse Assistant</h2>
+
+        <p class="company">New D Zambelis Ltd</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Jobs</title>
+    <style>
+ body {
+  font-family: Arial, sans-serif;
+  background: url(https://images.unsplash.com/photo-1736108920938-d52d001a6004?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 20px;
+   width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    color: white;
+}
+.job-list {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.job-card {
+    background: #fff;
+    border-left: 5px solid #d600ff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    cursor: pointer;
+    transition: transform .3s ease;
+    box-sizing: border-box;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+}
+
+.badge {
+    display: inline-block;
+    background: #eee;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.job-card h2 {
+    margin: 12px 0;
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.company {
+    color: #6a2dbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #555;
+    margin: 15px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 768px) {
+
+    .job-list {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .job-card {
+        padding: 15px;
+    }
+
+    .job-card h2 {
+        font-size: 20px;
+    }
+
+    .company {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 11px;
+    }
+
+    .apply-btn {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+}
+
+.badge {
+  display: inline-block;
+  background: #eee;
+  color: #666;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.job-card h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.company {
+  color: #6a2dbd;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 15px 0;
+  color: #555;
+}
+
+.description {
+  color: #444;
+  line-height: 1.5;
+}
+
+a {
+    color: rgb(56, 14, 172);
+}
+
+a:hover {
+    color: white;
+}
+
+button {
+  width: 30%;
+  height: 20%;
+  border: 2px solid rgb(56, 56, 153);
+  background: rgb(241, 241, 248);
+  color: rgb(8, 8, 8);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background: rgb(62, 35, 156);
+  color: rgb(238, 242, 250);
+}
+    </style>
+</head>
+<body>
+    <h1>Real Estate Jobs</h1>
+
+    <section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.inspector.administrator.property.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Inspector Administrator</h2>
+
+        <p class="company">Residential Property Business</p>
+
+        <div class="details">
+            <span>Salary: Up to £28,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time / Hybrid</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.manager.savills.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Manager</h2>
+
+        <p class="company">Savills</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.inspections.team.coordinator.beresfords.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Inspections Team Coordinator</h2>
+
+        <p class="company">Beresfords</p>
+
+        <div class="details">
+            <span>Salary: £27,000–£28,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time / Hybrid</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='lettings.negotiator.kings.permanent.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Lettings Negotiator</h2>
+
+        <p class="company">Kings Permanent Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £26,000–£35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='estate.agent.trainee.sales.negotiator.kings.permanent.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Estate Agent Trainee Sales Negotiator</h2>
+
+        <p class="company">Kings Permanent Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £16,000–£35,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.lister.valuer.bastow.irwin.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior Lister / Valuer</h2>
+
+        <p class="company">Bastow Irwin Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £65,000–£75,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.inspector.letcheck.inventories.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Inspector</h2>
+
+        <p class="company">LetCheck Inventories</p>
+
+        <div class="details">
+            <span>Salary: £35 per job</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Part-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='residential.surveyor.gcb.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Residential Surveyor</h2>
+
+        <p class="company">GCB Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £50,000–£60,000 + OTE</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time / Remote</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.litigation.lawyer.ellisons.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Litigation Lawyer</h2>
+
+        <p class="company">Ellisons</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='title.checker.residential.property.js.legal.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Title Checker – Residential Property</h2>
+
+        <p class="company">JS Legal Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £35,000–£50,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='commercial.property.solicitor.recruiter.specialists.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Commercial Property Solicitor</h2>
+
+        <p class="company">Recruiter Specialists</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='residential.property.solicitor.conveyancer.fisher.jones.greenwood.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Residential Property Solicitor / Conveyancer</h2>
+
+        <p class="company">Fisher Jones Greenwood</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='residential.property.solicitor.nq.js.legal.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Residential Property Solicitor NQ</h2>
+
+        <p class="company">JS Legal Recruitment</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='conveyancing.paralegal.lj.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Conveyancing Paralegal</h2>
+
+        <p class="company">LJ Recruitment</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 9:00–17:30</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='conveyancing.assistant.solicitors.firm.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Conveyancing Assistant</h2>
+
+        <p class="company">Solicitors' Firm</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='commercial.property.secretary.legal.firm.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Commercial Property Secretary</h2>
+
+        <p class="company">Legal Firm</p>
+
+        <div class="details">
+            <span>Salary: £24,500/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Mon–Fri, 9:00–17:00</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='chartered.town.planner.penguin.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Chartered Town Planner</h2>
+
+        <p class="company">Penguin Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £35,000–£45,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.director.level.surveyor.property.consultancy.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior to Director-level Surveyor</h2>
+
+        <p class="company">Property Consultancy</p>
+
+        <div class="details">
+            <span>Salary: £50,000–£80,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='surveying.assistant.hays.construction.property.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Surveying Assistant</h2>
+
+        <p class="company">Hays Construction & Property</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£32,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='multi.trade.operative.invision.group.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Multi-Trade Operative</h2>
+
+        <p class="company">Invision Group</p>
+
+        <div class="details">
+            <span>Salary: £160–£180/day</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Contract / Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='multi.trader.social.housing.emberstone.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Multi Trader – Social Housing</h2>
+
+        <p class="company">Emberstone Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £38,000–£42,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='plumber.multi.trader.emberstone.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Plumber Multi Trader</h2>
+
+        <p class="company">Emberstone Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £40,000–£42,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='multi.trader.social.housing.repairs.regen.solutions.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Multi Trader – Social Housing Repairs</h2>
+
+        <p class="company">Regen Solutions</p>
+
+        <div class="details">
+            <span>Salary: £200–£220/day</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Contract</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.manager.kings.permanent.recruitment.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Manager</h2>
+
+        <p class="company">Kings Permanent Recruitment</p>
+
+        <div class="details">
+            <span>Salary: £32,000/year</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='new.homes.sales.advisor.fawkes.reece.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>New Homes Sales Advisor</h2>
+
+        <p class="company">Fawkes & Reece</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£31,000 + commission</span><br>
+            <span>📍 Location: Chelmsford</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='senior.lettings.consultant.beresfords.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Senior Lettings Consultant</h2>
+
+        <p class="company">Beresfords</p>
+
+        <div class="details">
+            <span>Salary: £18,000–£20,000</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.garden.multi.trader.spacio.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property & Garden Multi Trader</h2>
+
+        <p class="company">Spacio</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full/Part-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='building.surveyor.braintree.district.council.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Building Surveyor</h2>
+
+        <p class="company">Braintree District Council</p>
+
+        <div class="details">
+            <span>Salary: £48,945–£53,082</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='stock.condition.surveyor.local.authority.property.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Stock Condition Surveyor</h2>
+
+        <p class="company">Local Authority / Property</p>
+
+        <div class="details">
+            <span>Salary: £32/hour</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='housing.options.triage.officer.braintree.district.council.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Housing Options Triage Officer</h2>
+
+        <p class="company">Braintree District Council</p>
+
+        <div class="details">
+            <span>Salary: £28–£30/hour</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.construction.business.development.manager.local.property.group.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property & Construction Business Development Manager</h2>
+
+        <p class="company">Local Property Group</p>
+
+        <div class="details">
+            <span>Salary: £30,000–£45,000 OTE</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full/Part-time / Hybrid</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.inventory.clerk.no.letting.go.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Inventory Clerk</h2>
+
+        <p class="company">No Letting Go</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Part-time / Freelance</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.inspector.letting.inventory.company.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Inspector</h2>
+
+        <p class="company">Letting/Inventory Company</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Part-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.maintenance.operative.housing.property.employer.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Maintenance Operative</h2>
+
+        <p class="company">Housing/Property Employer</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+
+
+<section class="job-list">
+
+    <div class="job-card" onclick="window.location.href='property.administrator.residential.property.employer.html'">
+        <span class="badge">Promoted</span>
+
+        <h2>Property Administrator</h2>
+
+        <p class="company">Residential Property Employer</p>
+
+        <div class="details">
+            <span>Salary: Not stated</span><br>
+            <span>📍 Location: Not stated</span><br>
+            <span>🕒 Hour: Full-time</span>
+        </div>
+
+        <button>View More</button>
+
+    </div>
+
+</section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.7;
+}
+
+/* Main container */
+.job-description {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Main heading */
+.job-description h1 {
+  color: #0a4d8c;
+  border-bottom: 3px solid #0a4d8c;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+/* Section headings */
+.job-description h2 {
+  color: #222;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+.job-description p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* Lists */
+.job-description ul {
+  padding-left: 25px;
+}
+
+.job-description li {
+  margin-bottom: 10px;
+}
+
+/* Optional highlight box */
+.info-box {
+  background: #eef6ff;
+  border-left: 5px solid #0a4d8c;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 6px;
+}

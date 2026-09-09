@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Work Connect UK</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        /* =========================
+   GLOBAL RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background:
+    linear-gradient(rgba(7,35,73,.82),rgba(7,35,73,.82)),
+    url("images/login-bg.jpg");
+}
+
+/* =========================
+   MAIN CARD
+========================= */
+.signup-container {
+    width: 100%;
+    max-width: 560px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.12);
+    border: 1px solid #eef2f7;
+}
+
+/* =========================
+   LOGO + HEADER
+========================= */
+.logo {
+    width: 110px;
+    display: block;
+    margin: 0 auto 18px;
+}
+
+.signup-container h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #0f172a;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* =========================
+   FORM FIELDS
+========================= */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+/* INPUT WRAPPER */
+.input-box {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 12px 14px;
+    transition: all 0.25s ease;
+}
+
+/* ICON */
+.input-box i {
+    color: #94a3b8;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+/* INPUT + SELECT */
+.input-box input,
+.input-box select {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #0f172a;
+}
+
+/* FOCUS STATE */
+.input-box:focus-within {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================
+   PASSWORD TOGGLE
+========================= */
+.eye-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #94a3b8;
+    transition: 0.2s;
+}
+
+.eye-btn:hover {
+    color: #2563eb;
+}
+
+/*=======================
+    PARAGRAPH
+========================*/
+#password-help {
+    color: red;
+}    
+
+/* =========================
+   TERMS CHECKBOX
+========================= */
+.checkbox-group {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 13px;
+    color: #475569;
+    margin: 16px 0 22px;
+    line-height: 1.4;
+}
+
+.checkbox-group input {
+    margin-top: 3px;
+    accent-color: #2563eb;
+}
+
+.checkbox-group a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.checkbox-group a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   PRIMARY BUTTON
+========================= */
+.signup-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+}
+
+.signup-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 26px rgba(37, 99, 235, 0.28);
+}
+
+/* =========================
+   DIVIDER
+========================= */
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 24px 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+.divider span {
+    padding: 0 12px;
+}
+
+/* =========================
+   LOGIN SECTION
+========================= */
+.login-text {
+    text-align: center;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.login-btn {
+    display: block;
+    text-align: center;
+    padding: 11px;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.login-btn:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    body {
+        padding: 18px;
+    }
+
+    .signup-container {
+        padding: 28px;
+        border-radius: 14px;
+    }
+
+    .signup-container h1 {
+        font-size: 22px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="signup-container">
+
+    <!-- Logo -->
+    <img src="ChatGPT Image Jun 10, 2026, 04_18_31 PM.png" alt="Work Connect UK Logo" class="logo" width="200">
+        <h1 id="title">Work Connect <span>UK</span></h1>
+
+    <h1>Create Your Account</h1>
+
+    <p class="subtitle">
+        Join Work Connect UK and start applying for verified jobs across the United Kingdom.
+    </p>
+
+    <form action="#" method="POST">
+
+        <!-- First Name -->
+        <div class="input-group">
+            <label for="firstname">First Name *</label>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Enter your first name"
+                    required>
+            </div>
+        </div>
+
+        <!-- Middle Name -->
+        <div class="input-group">
+            <label for="middlename">Middle Name (Optional)</label>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input
+                    type="text"
+                    id="middlename"
+                    name="middlename"
+                    placeholder="Enter your middle name">
+            </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="input-group">
+            <label for="lastname">Last Name *</label>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    placeholder="Enter your last name"
+                    required>
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+            <label for="email">Email Address *</label>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required>
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="input-group">
+            <label for="phone">Phone Number *</label>
+            <div class="input-box">
+                <i class="fa-solid fa-phone"></i>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required>
+            </div>
+        </div>
+
+        <!-- Country -->
+        <div class="input-group">
+            <label for="country">Country *</label>
+            <div class="input-box">
+                <i class="fa-solid fa-globe"></i>
+
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option>United Kingdom</option>
+                    <option>Nigeria</option>
+                    <option>Ghana</option>
+                    <option>India</option>
+                    <option>Pakistan</option>
+                    <option>South Africa</option>
+                    <option>Kenya</option>
+                    <option>Canada</option>
+                    <option>United States</option>
+                    <option>Australia</option>
+                    <option>Isreal</option>
+                    <option>Brasil</option>
+                    <option>coast</option>
+                    <option>Dominican Republic</option>
+                    <option>Antigua and Barbuda</option>
+                    <option>Bahamas</option>
+                    <option>Barbados</option>
+                    <option>Belize </option>
+                    <option>Cuba</option>
+                    <option>Mexico</option>
+                    <option>Trinidad and Tobago</option>
+                    <option>Nicaragua </option>
+                    <option>Guatemala </option>
+                    <option>Argentina</option>
+                    <option>Bolivia </option>
+                    <option>Chile</option>
+                    <option>Colombia </option>
+                    <option>Ecuador </option>
+                    <option>Paraguay </option>
+                    <option>Other</option>
+                </select>
+
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+            <label for="password">Password *</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    aria-describedby="password-help"
+                    placeholder="Create a password"
+                    required>
+
+                <button
+                    type="button"
+                    id="togglePassword"
+                    class="eye-btn">
+
+                    <i class="fa-solid fa-eye"></i>
+
+                </button><br>
+
+            </div>
+
+            <p id="password-help">
+                    Your password must be at least 8 characters long and include one uppercase letter and one number
+                </p>
+
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password *</label>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Confirm your password"
+                    required>
+
+            </div>
+        </div>
+
+        <!-- Terms -->
+        <div class="checkbox-group">
+
+            <input
+                type="checkbox"
+                id="agree"
+                required>
+
+            <label for="agree">
+                I agree to the
+                <a href="Terms & Conditions.html">Terms & Conditions</a>
+                and
+                <a href="Privacy Policy.html">Privacy Policy</a>.
+            </label>
+
+        </div>
+
+        <!-- Create Account -->
+        <button type="submit" class="signup-btn">
+            Create Account
+        </button>
+
+    </form>
+
+    <div class="divider">
+        <span>OR</span>
+    </div>
+
+    <p class="login-text">
+        Already have an account?
+    </p>
+
+    <a href="login.html" class="login-btn">
+        Log In
+    </a>
+
+</div>
+
+<script>
+const password = document.getElementById("password");
+const toggle = document.getElementById("togglePassword");
+const icon = toggle.querySelector("i");
+
+toggle.addEventListener("click", function () {
+
+    if (password.type === "password") {
+
+        password.type = "text";
+        icon.classList.replace("fa-eye","fa-eye-slash");
+
+    } else {
+
+        password.type = "password";
+        icon.classList.replace("fa-eye-slash","fa-eye");
+
+    }
+});
+</script>
+
+</body>
+</html>
