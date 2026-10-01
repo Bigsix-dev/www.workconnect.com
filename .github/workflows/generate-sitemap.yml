@@ -1,0 +1,68 @@
+name: Generate sitemap
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "*.html"
+      - ".github/workflows/generate-sitemap.yml"
+  schedule:
+    - cron: "17 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Generate sitemap from HTML pages
+        id: sitemap
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          from urllib.parse import quote
+          import xml.etree.ElementTree as ET
+
+          base_url = "https://workconnectuk.com/"
+          namespace = "http://www.sitemaps.org/schemas/sitemap/0.9"
+          ET.register_namespace("", namespace)
+          root = ET.Element(f"{{{namespace}}}urlset")
+
+          for page in sorted(Path(".").glob("*.html")):
+              entry = ET.SubElement(root, f"{{{namespace}}}url")
+              location = ET.SubElement(entry, f"{{{namespace}}}loc")
+              location.text = base_url + quote(page.name, safe="")
+
+          content = ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\n"
+          sitemap = Path("sitemap.xml")
+          changed = not sitemap.exists() or sitemap.read_bytes() != content
+
+          if changed:
+              sitemap.write_bytes(content)
+
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"changed={str(changed).lower()}\n")
+          PY
+
+      - name: Save sitemap
+        if: steps.sitemap.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git commit -m "Update sitemap"
+          git push
+
+      - name: Request GitHub Pages rebuild
+        if: steps.sitemap.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
